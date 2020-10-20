@@ -1,0 +1,68 @@
+
+           /* EX1) Write a selector to target the main title of the page*/
+           .jumbotron h1{
+            color: red;
+        } 
+       /* EX2) Write a selector to target every children of the navbar*/
+       .nav a{
+           color: blue!important;
+       }
+    
+       /* EX3) Write a selector to target the "continue reading..." inside the jumbotron*/
+       .jumbotron p a{
+           color: green!important;
+       }
+
+       /* EX4) Write a selector to target the first blogpost*/
+       /*.col-md-6:first-of-type > div{
+           background-color: greenyellow;
+       }*/
+       .blog-post:first-of-type {
+           background-color: greenyellow;
+       }
+      /*  EX5) Write a selector to target the "even" links in the navbar*/
+      .nav a:nth-child(even){
+          background-color: hotpink;
+      }
+
+      /*  EX6) Write a selector to target the last blog post*/
+      .blog-post:last-of-type{
+          background-color:lightblue;
+      }
+      /*  EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )*/
+      .list-unstyled.mb-0 li a{
+          color: lightcoral;
+      }
+      /*  EX8) Write a selector to target the second post author*/
+      .blog-post:nth-child(3) p.blog-post-meta a {
+           background-color: red;
+           color:white;
+       }
+      /*  EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly*/
+    .blog-footer a[href="#"]:last-of-type {
+        color: magenta;
+        border: 2px solid magenta;
+     }
+
+      /*  EX10) Write a selector to target the footer*/
+      .blog-footer{
+          background-color:mistyrose;
+      }
+    
+
+
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
